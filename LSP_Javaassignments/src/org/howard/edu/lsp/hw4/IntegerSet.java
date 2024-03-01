@@ -33,7 +33,6 @@ public class IntegerSet  {
  * Returns true if the 2 sets are equal, false otherwise;
  * Two sets are equal if they contain all of the same values in ANY order.  This overrides
  * the equal method from the Object class.
- * Unfinished
 */
 	public boolean equals(IntegerSet o) {
 	    if (set.size() != o.length()) {
