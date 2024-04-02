@@ -82,14 +82,18 @@ public class IntegerRange implements Range {
         return lowerBound == other.lowerBound && upperBound == other.upperBound;
     }
 
-    /*
+    
     public boolean overlaps(Range other) {
-        if (this.upperBound < other.lowerBound || this.lowerBound > other.upperBound) {
-            //return false; // No overlap
+    	
+        
+        if (this.upperBound < other.getLowerBound() || this.lowerBound > ((IntegerRange) other).getUpperBound()) {
+            return false; // No overlap
         } else {
-            //return true; // Overlaps
+            return true; // Overlaps
         }
     }
-    */
+
+
+   
 
 }
